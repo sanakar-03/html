@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registeration Forms</title>
+    <link rel="icon" type="image/x-icon" href="logo.png.jpg">
+</head>
+<style>
+    body{
+        width: 800px;
+            background:white;
+            margin: 20px auto;
+            padding: 30px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    }
+    input[type="submit"], input[type="reset"]{
+        border-radius: 20px 0px 20px 0px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    }
+    table{
+        width: 100%;
+    }
+    form{
+            width: 92%;
+            max-width: 650px 660px;
+            background: pink;
+            padding: 30px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            border-radius: 15px;
+        }
+        button{
+            background-color: blueviolet;
+            color: aqua;
+            height: 50px;
+            width: 150px;
+            font-style: italic;
+            cursor: pointer;
+        }
+</style>
+<body>
+    <center><h1>STUDENT REGISTERATION FORM</h1></center>
+    <hr>
+    <form action="https://formspree.io" method="POST">
+        <table align="center" width="700" cellpadding="10">
+            <tr>
+                <td>Roll.no:</td>
+                <td><input type="text" placeholder="enter your roll.no" required></td>
+            </tr>
+            <tr>
+                <td>Name:</td>
+                <td><input type="text" placeholder="enter your name" required></td>
+            </tr>
+            <tr>
+                <td>Father name:</td>
+                <td><input type="text" placeholder="enter your father name" required></td>
+            </tr>
+            <tr>
+                <td>DOB:</td>
+                <td><input type="date" required></td>
+            </tr>
+            <tr>
+                <td>Phone:</td>
+                <td><input type="text" size="1" value="+91">-<input type="text" required></td>
+                </tr>
+                <tr>
+            <td>Email id:</td>
+            <td><input type="email" placeholder="enter your email id"required></td>
+            <tr>
+                <td>Password:</td>
+                <td><input type="password" placeholder="enter the password" required></td>
+            </tr>
+            <tr>
+                <td>Gender:</td>
+                <td><input type="radio" name="Gender" value="Male">Male<input type="radio" name="Gender" value="female" required>female</td>
+            </tr>
+                <td>Department:</td>
+                <td><input type="checkbox" name="Department" value="Mca">Mca
+                <input type="checkbox" name="Department" value="Mba">Mba
+                <input type="checkbox" name="Department" value="ME">ME
+                <input type="checkbox" name="Department" value="Mtech">Mtech</td>
+            </tr>
+            <tr>
+                <td>Course</td>
+    <td><select required>
+        <option> ---------------------- Select Current Course's ------------------------ </option>
+        <option>Python</option>
+        <option>Node</option>
+        <option>Java</option>
+        <option>React</option>
+        <option>PHP</option>
+        <option>Html</option>
+      </select>
+    </td>
+            </tr>
+            <tr>
+                <td>Student photo</td>
+                <td><input type="file" required></td>
+            </tr>
+            <tr>
+                <td>City:</td>
+                <td><input type="text" placeholder="enter your city name" required></td>
+            </tr>
+            <tr>
+                <td>Address:</td>
+                <td><textarea cols="45" rows="10"  required></textarea></td>
+            </tr>
+                <tr>
+                <td colspan="2" align="center"><input type="submit" value="Register"></td>       
+            </tr>
+            <tr>
+                <td colspan="2" align="center"><input type="reset" value="reset"></td>
+            </tr>
+            
+        </table>
+    </form>
+    <hr>
+    <center><button onclick="window.print()" name="save as pdf">save as pdf</button></center>
+</body>
+</html>
